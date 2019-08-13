@@ -11,6 +11,7 @@ def main():
     dirnames = os.listdir(Dataset)
     for dirname in dirnames:
         dirlist.append(dirname)
+    dirlist.sort()
     parser = ap.ArgumentParser()
     parser.add_argument('Story',
                         type=int,
@@ -19,13 +20,14 @@ def main():
                         type=int,
                         help = 'How many recursive you want')
     
+
     args = parser.parse_args()
     story = args.Story
     count = args.Count
 
     filepath = [
-        Dataset + dirnames[story] + '/' + Datas[0],
-        Dataset + dirnames[story] + '/' + Datas[1]
+        Dataset + dirlist[story] + '/' + Datas[0],
+        Dataset + dirlist[story] + '/' + Datas[1]
     ]
     
     with open(filepath[0], 'r') as intro_fd:
