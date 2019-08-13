@@ -1,11 +1,13 @@
 # 재귀함수가 뭔가요?
 
+![](./example.gif){: width="50%" height="50%"}{: .center}
+
 ## 사용법
 ```
 python run.py ${STORY} ${HOW_MANY_RECURSIVE}
 ```
-> ${STORY} : `./dataset` 디렉터리 안에 `00-long-time-ago`와 같은 데이터셋 선택을 위한 파라미터  
-> ${HOW_MANY_RECURSIVE} : 재귀 횟수
+- ${STORY} : `./dataset` 디렉터리 안에 `00-long-time-ago`와 같은 데이터셋 선택을 위한 파라미터  
+- ${HOW_MANY_RECURSIVE} : 재귀 횟수  
 
 ### 디렉터리 구조
 이야기 추가를 위해 
