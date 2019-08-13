@@ -40,7 +40,7 @@ def main():
     # The beginning of the legend.
     for character in Datas[0]:
         print(character, end='', flush=True)
-        time.sleep(0.1)
+        time.sleep(0.03)
     what_is_recursive_function(count, 0)
 
 def what_is_recursive_function(remained, tabcount):
@@ -49,10 +49,10 @@ def what_is_recursive_function(remained, tabcount):
         if(character == '\n'):
             print('\n', end='', flush=True)
             print('\t'*tabcount, end='', flush=True)
-            time.sleep(0.1)
+            time.sleep(0.03)
         else:
             print(character, end='', flush=True)
-            time.sleep(0.1)
+            time.sleep(0.03)
     remained -= 1
     if remained > 0:
         print('')
