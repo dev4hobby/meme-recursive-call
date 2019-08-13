@@ -1,6 +1,6 @@
 # 재귀함수가 뭔가요?
 
-![](./example.gif){: width="50%" height="50%"}{: .center}
+![](./example.gif)
 
 ## 사용법
 ```
