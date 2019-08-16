@@ -1,12 +1,17 @@
 import os
 import sys
 import time
+import platform
 import argparse as ap
 
 Dataset = './datasets/'
 Datas = ['intro','answer']
 
 def main():
+    if platform.system() == 'Windows':
+      os.system('cls')
+    else:
+      os.system('clear')
     dirlist = list()
     dirnames = os.listdir(Dataset)
     for dirname in dirnames:
